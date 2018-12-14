@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<link href="{% static "css/one-page-wonder.min.css" %}" rel="stylesheet">
+<link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+<header class="masthead text-center text-white"  id="top">
+    <div class="masthead-content">
+      <div class="container">
+        <h1 class="masthead-heading mb-0">iDoar</h1>
+        <h2 class="masthead-subheading mb-0">We don't overflow you.</h2>
+        <a href="#learnmore" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+  <section id="learnmore">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static "img/01.jpg" %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Reinventing Email</h2>
+            <p>Mail can be a lot more then messages, with iDoar your mail messages ge a whole different meaning...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static "img/02.jpg" %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">Easy to Access</h2>
+            <p>You can access your email from any device. Just log in via your web browser and get all your messages instantly!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static "img/03.jpg" %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Smart Emailing!</h2>
+            <p>Our sophisticated nueral network system makes sure you won't miss a thing! All mails are sorted by a machine learning program so you can access mail catagories in a breeze!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">iDoar 2018</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
+  <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+
+{% endblock %}

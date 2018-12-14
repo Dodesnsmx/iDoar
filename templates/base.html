@@ -1,0 +1,84 @@
+{% load static %}
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>iDoar</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static " css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static " css/mdb.min.css" %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static " css/style.css" %}" rel="stylesheet">
+
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static " css/dashboard.css" %}" rel="stylesheet">
+    <script type="text/javascript" src="{{ STATIC_URL }} /static/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">iDoar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../signup.php">Sign Up</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../login.php">Log In</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- /Start your project here-->
+
+        <div id="content">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="{% static " js/jquery-3.3.1.min.js" %}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static " js/popper.min.js" %}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static " js/bootstrap.min.js" %}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static " js/mdb.min.js" %}"></script>
+</body>
+
+</html>
